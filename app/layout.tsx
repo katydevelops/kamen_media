@@ -46,7 +46,8 @@ function Header() {
 function Footer() {
   return (
     <footer className="footer">
-      <p>&copy; {new Date().getFullYear()} Andrew Kamen - DJ Services in Pittsburgh</p>
+      <p>&copy; {new Date().getFullYear()} <span className="footer-highlight">Andrew Kamen</span> - DJ Services in Pittsburgh</p>
     </footer>
   );
 }
+

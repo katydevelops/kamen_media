@@ -16,7 +16,7 @@ export default function ContactPage() {
         <textarea id="event" name="event" rows={4} required></textarea>
         <br />
 
-        <button type="submit">Submit</button>
+        <button type="submit" className="cta">Submit</button>
       </form>
     </div>
   );
