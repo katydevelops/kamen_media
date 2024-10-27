@@ -1,4 +1,5 @@
-// app/layout.tsx
+import './globals.css';
+
 export const metadata = {
   title: "Andrew Kamen | Pittsburgh DJ Services",
   description: "Book Andrew Kamen, the premier wedding and event DJ in Pittsburgh, for your special day.",
@@ -11,6 +12,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@300&display=swap" rel="stylesheet" />
         <meta name="description" content={metadata.description} />
         <meta name="keywords" content={metadata.keywords} />
         <title>{metadata.title}</title>
