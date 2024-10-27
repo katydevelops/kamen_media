@@ -1,16 +1,13 @@
-
-import Link from 'next/link';
-
-export default function Home() {
+// app/page.tsx
+export default function HomePage() {
   return (
-    <main>
-      <h1>Welcome to Kamen Media!</h1>
-      <p>Your one-stop solution for wedding DJ and corporate videography services!</p>
-      <nav>
-        <Link href="/dj">DJ Services</Link>
-        <br />
-        <Link href="/videography">Videography Services</Link>
-      </nav>
-    </main>
+    <div>
+      <h2>Pittsburgh's Premier DJ Services</h2>
+      <p>
+        I’m <strong>Andrew Kamen</strong>, a professional DJ specializing in weddings, corporate events, and private parties. 
+        Let’s make your event unforgettable with the perfect soundtrack.
+      </p>
+      <a href="/services">Explore DJ Services</a>
+    </div>
   );
 }
