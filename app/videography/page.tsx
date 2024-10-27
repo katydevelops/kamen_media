@@ -12,11 +12,11 @@ export default function VideographyPage() {
         every detail is preserved beautifully.
       </p>
       <p>
-        Whether it's promotional video or a product shoot, we work closely with our 
+        Whether it&apos;s promotional video or a product shoot, we work closely with our 
         clients to create high-quality videos that exceed expectations.
       </p>
         </div>
-    );
+    );Th
 
     const bookingForm = (
         <form>
@@ -37,5 +37,12 @@ export default function VideographyPage() {
 
             <button type="submit">Submit Booking</button>
         </form>
-    )
+    );
+
+    return (
+        <main>
+            <h1>Videography Services</h1>
+            <TabSwitcher aboutContent={aboutVideography} bookingForm={bookingForm} />
+        </main>
+    );
 }
