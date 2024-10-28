@@ -14,15 +14,17 @@ body {
 /* Header */
 header {
   display: flex;
-  justify-content: space-between;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #111;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.header-right {
+  display: flex;
   align-items: center;
-  padding: 20px;
-  background-color: #111;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
-  /* Subtle shadow */
-  position: sticky;
-  top: 0;
-  z-index: 10;
+  gap: 20px;
 }
 
 header h1 {
@@ -31,8 +33,12 @@ header h1 {
   font-weight: 600;
 }
 
+nav {
+  display: flex;
+  gap: 15px;
+}
+
 nav a {
-  margin-left: 15px;
   color: #fff;
   text-decoration: none;
   font-weight: 300;
@@ -41,10 +47,8 @@ nav a {
 
 nav a:hover {
   color: #f39c12;
-  /* Gold hover effect */
 }
 
-/* Footer */
 footer {
   text-align: center;
   padding: 15px;
@@ -72,7 +76,6 @@ p {
   line-height: 1.6;
 }
 
-/* CTA Button */
 a.cta {
   display: inline-block;
   margin-top: 20px;
@@ -88,10 +91,8 @@ a.cta {
 a.cta:hover {
   background-color: #ffa502;
   transform: scale(1.05);
-  /* Slight zoom on hover */
 }
 
-/* Fade-in animation on load */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -102,23 +103,27 @@ a.cta:hover {
   }
 }
 
-/* Responsive design */
+/* Keep nav bar responsize on smaller viewports */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  nav a {
-    margin: 8px 0;
+  .header-right {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 10px;
   }
 
-  h2 {
-    font-size: 28px;
+  nav {
+    flex-direction: column;
+    gap: 10px;
   }
 
-  p {
-    font-size: 16px;
+  .book-now {
+    align-self: flex-start;
   }
 }
 
@@ -154,7 +159,7 @@ button.cta {
 }
 
 .book-now {
-  margin-left: 15px;
+  margin-right: auto;
   padding: 10px 20px;
   background-color: #f39c12;
   color: #000;
@@ -167,10 +172,8 @@ button.cta {
 .book-now:hover {
   background-color: #ffa502;
   transform: scale(1.05);
-  /* Slight zoom-in on hover */
 }
 
-/* Form Styles */
 form {
   display: flex;
   flex-direction: column;

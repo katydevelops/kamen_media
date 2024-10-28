@@ -31,6 +31,8 @@ function Header() {
   return (
     <header className="header">
       <h1>Andrew Kamen DJ</h1>
+      <div className="header-right">
+      <a href="/book" className="cta book-now">Book Now</a>
       <nav>
         <a href="/">Home</a>
         <a href="/about">About</a>
@@ -38,7 +40,7 @@ function Header() {
         <a href="/contact">Contact</a>
         <a href="/faq">FAQ</a>
       </nav>
-      <a href="/book" className="cta book-now">Book Now</a> {/* New CTA Button */}
+      </div>
     </header>
   );
 }
