@@ -152,3 +152,20 @@ button.cta {
 .footer-highlight:hover {
   color: #f39c12;
 }
+
+.book-now {
+  margin-left: 15px;
+  padding: 10px 20px;
+  background-color: #f39c12;
+  color: #000;
+  font-weight: bold;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.book-now:hover {
+  background-color: #ffa502;
+  transform: scale(1.05);
+  /* Slight zoom-in on hover */
+}

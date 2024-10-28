@@ -38,6 +38,7 @@ function Header() {
         <a href="/contact">Contact</a>
         <a href="/faq">FAQ</a>
       </nav>
+      <a href="/book" className="cta book-now">Book Now</a> {/* New CTA Button */}
     </header>
   );
 }
