@@ -26,24 +26,24 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   );
 }
 
-// Header Component
 function Header() {
   return (
     <header className="header">
       <h1>Andrew Kamen DJ</h1>
-      <div className="header-right">
-      <a href="/book" className="cta book-now">Book Now</a>
-      <nav>
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/services">Services</a>
-        <a href="/contact">Contact</a>
-        <a href="/faq">FAQ</a>
-      </nav>
+      <div className="header-nav-wrapper">
+        <a href="/book" className="cta book-now">Book Now</a>
+        <nav className="header-nav">
+          <a href="/">Home</a>
+          <a href="/about">About</a>
+          <a href="/services">Services</a>
+          <a href="/contact">Contact</a>
+          <a href="/faq">FAQ</a>
+        </nav>
       </div>
     </header>
   );
 }
+
 
 // Footer Component
 function Footer() {
@@ -53,4 +53,3 @@ function Footer() {
     </footer>
   );
 }
-
