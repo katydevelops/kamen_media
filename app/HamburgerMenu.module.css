@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
-    background-color: #333;
+    background-color: #111;
 }
 
 .navLinks {
@@ -17,10 +17,10 @@
 
 .menuIcon {
     display: block;
-    font-size: 1.5em;
+    font-size: 2em;
     color: white;
     cursor: pointer;
-    padding: 10px;
+    padding: 15px;
     /* Makes it easier to tap on mobile */
 }
 
@@ -30,25 +30,22 @@
     flex-direction: column;
     gap: 15px;
     position: absolute;
-    top: 50px;
-    right: 20px;
+    top: 120px;
+    left: 90px;
     background-color: #333;
-    padding: 10px;
+    padding: 15px;
     border-radius: 8px;
     z-index: 1000;
-    /* Ensures menu is on top */
 }
 
 /* Styles for larger screens */
 @media (min-width: 768px) {
     .menuIcon {
         display: none;
-        /* Hide menu icon on larger screens */
     }
 
     .navLinks {
         display: flex !important;
-        /* Force inline display on larger screens */
         gap: 20px;
     }
 }
