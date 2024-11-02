@@ -1,4 +1,5 @@
 import './globals.css';
+import Header from "./components/Header";
 
 export const metadata = {
   title: "Andrew Kamen | Pittsburgh DJ Services",
@@ -26,23 +27,23 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   );
 }
 
-function Header() {
-  return (
-    <header className="header">
-      <h1 className="logo">Andrew Kamen DJ</h1>
-      <div className="header-right">
-        <a href="/book" className="book-now">Book Now</a>
-        <nav>
-          <a href="/">Home</a>
-          <a href="/about">About</a>
-          <a href="/services">Services</a>
-          <a href="/contact">Contact</a>
-          <a href="/faq">FAQ</a>
-        </nav>
-      </div>
-    </header>
-  );
-}
+// function Header() {
+//   return (
+//     <header className="header">
+//       <h1 className="logo">Andrew Kamen DJ</h1>
+//       <div className="header-right">
+//         <a href="/book" className="book-now">Book Now</a>
+//         <nav>
+//           <a href="/">Home</a>
+//           <a href="/about">About</a>
+//           <a href="/services">Services</a>
+//           <a href="/contact">Contact</a>
+//           <a href="/faq">FAQ</a>
+//         </nav>
+//       </div>
+//     </header>
+//   );
+// }
 
 function Footer() {
   return (

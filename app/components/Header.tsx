@@ -1,4 +1,4 @@
-import { useState, useEffect, use } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import HamburgerMenu from './HamburgerMenu';
 import styles from './Header.module.css';
