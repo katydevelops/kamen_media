@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import HamburgerMenu from './HamburgerMenu';
-import styles from './Header.module.css';
+import styles from '../Header.module.css';
 
 export default function Header() {
     const [isMobile, setIsMobile] = useState(false);
