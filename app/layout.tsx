@@ -1,5 +1,6 @@
 import './globals.css';
 import Header from "./components/Header";
+import Footer from "./components/Footer"; 
 
 export const metadata = {
   title: "Andrew Kamen | Pittsburgh DJ Services",
@@ -10,7 +11,7 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className="h-full">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@300&display=swap" rel="stylesheet" />
@@ -18,37 +19,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="keywords" content={metadata.keywords} />
         <title>{metadata.title}</title>
       </head>
-      <body>
+      <body className="flex flex-col min-h-screen">
         <Header />
-        <main>{children}</main>
-        <Footer />
+        <main className="flex-grow container mx-auto p-4">
+          {children}
+        </main>
+        <Footer /> {/* Footer remains at the bottom */}
       </body>
     </html>
   );
 }
 
-// function Header() {
-//   return (
-//     <header className="header">
-//       <h1 className="logo">Andrew Kamen DJ</h1>
-//       <div className="header-right">
-//         <a href="/book" className="book-now">Book Now</a>
-//         <nav>
-//           <a href="/">Home</a>
-//           <a href="/about">About</a>
-//           <a href="/services">Services</a>
-//           <a href="/contact">Contact</a>
-//           <a href="/faq">FAQ</a>
-//         </nav>
-//       </div>
-//     </header>
-//   );
-// }
 
-function Footer() {
-  return (
-    <footer className="footer">
-      <p>&copy; {new Date().getFullYear()} <span className="footer-highlight">Andrew Kamen</span> - DJ Services in Pittsburgh</p>
-    </footer>
-  );
-}
