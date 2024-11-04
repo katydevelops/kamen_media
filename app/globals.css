@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 html,
 body {
@@ -187,6 +190,16 @@ nav a {
 }
 
 nav a:hover {
+  color: #f39c12;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
   color: #f39c12;
 }
 
