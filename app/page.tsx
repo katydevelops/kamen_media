@@ -6,7 +6,12 @@ export default function HomePage() {
         Pittsburgh&apos;s Premier <span className="text-amber-500">DJ Services</span>
       </h1>
       <p className="mt-4 text-lg text-gray-300">Making your event unforgettable with the perfect soundtrack.</p>
-      <a href="/services" className="cta">Explore DJ Services</a>
+      <a
+        href="/services"
+        className="mt-6 inline-block px-6 py-3 text-lg font-semibold text-black bg-amber-500 rounded hover:bg-amber-400 transition-all shadow-lg hover:shadow-xl"
+      >
+        Explore DJ Services
+      </a>
     </div>
   );
 }
