@@ -14,12 +14,15 @@ body {
   color: #fff;
 }
 
-footer {
-  text-align: center;
-  padding: 15px;
-  background-color: #111;
-  font-size: 14px;
-  border-top: 1px solid #333;
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media (min-width: 768px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 
 main {
@@ -91,6 +94,14 @@ textarea {
 
 button.cta {
   margin-top: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #111;
+  font-size: 14px;
+  border-top: 1px solid #333;
 }
 
 .footer-highlight {
